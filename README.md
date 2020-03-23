@@ -44,6 +44,7 @@ pug2pdf( {
     options: {} // support coming soon
 
 } );
+```
 
 ### Licence: (MIT License)
 
