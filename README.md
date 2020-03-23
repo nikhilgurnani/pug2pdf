@@ -1,6 +1,6 @@
 # pug2pdf
 
-##### This is unofficial library to generate a PDF from a Pug file using npm packages pug and pdfshift. (_Message Support will be added soon_).
+##### This is unofficial library to generate a PDF from a Pug file using npm packages pug and pdfshift. (_Options Support will be added soon_).
 
 ### Set-up:
 
