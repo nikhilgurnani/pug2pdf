@@ -1,0 +1,62 @@
+{
+    "name": "pug2pdf",
+    "version": "1.0.0",
+    "description": "A simple wrapper for Pug and PDFShift.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "setup:dev": "rm -rf node_modules && rm package-lock.json && npm i",
+        "setup:prod": "rm -rf node_modules && rm package-lock.json && npm i --production",
+        "dev:watch": "ava ./__tests__/**/*.specs.js --watch --verbose",
+        "dev:watch:single": "ava --watch --verbose"
+    },
+    "keywords": [],
+    "author": "Nikhil Gurnani (gurnanikhil@gmail.com)",
+    "license": "ISC",
+    "dependencies": {
+        "pdfshift": "^2.0.1",
+        "pug": "^2.0.4"
+    },
+    "xo": {
+        "esnext": true,
+        "semicolon": true,
+        "space": 4,
+        "rules": {
+            "space-in-parens": [
+                "error",
+                "always"
+            ],
+            "padded-blocks": [
+                "error",
+                "always"
+            ],
+            "array-bracket-spacing": [
+                "error",
+                "always"
+            ],
+            "object-curly-spacing": [
+                "error",
+                "always"
+            ],
+            "template-curly-spacing": [
+                "error",
+                "always"
+            ],
+            "computed-property-spacing": [
+                "error",
+                "always"
+            ],
+            "func-names": [
+                "error",
+                "always"
+            ],
+            "comma-dangle": [
+                "error",
+                "only-multiline"
+            ]
+        }
+    },
+    "devDependencies": {
+        "ava": "^3.5.1"
+    }
+}
