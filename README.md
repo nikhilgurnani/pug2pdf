@@ -1,8 +1,6 @@
 # pug2pdf
 
-##### This is unofficial library that combines the power of two packages [pug](https://www.npmjs.com/package/pug) and [pdfshift](https://pdfshift.io) to generate a PDF from a Pug file. (_Options Support will be added soon_).
-
-####
+##### This is unofficial library that combines the power of two packages [pug](https://www.npmjs.com/package/pug) and [pdfshift](https://pdfshift.io) to generate a PDF from a Pug file.
 
 ### Set-up:
 
@@ -23,15 +21,14 @@ That's all, you are ready to use PDF Shift service!
 
 ### Usage
 
-You can now use the object to convert a pug file to a pdf. Simply pass the absolute path of the pug file with the data and options (not required)
+You can now use the object to convert a pug file to a pdf. Simply pass the absolute path of the pug file with the data.
+
 ```javascript
 pug2pdf( {
 
     pugPath: 'template.pug',
 
     data: { name: 'foo', address: 'bar'}
-
-    options: {} // support coming soon
 
 } );
 ```
@@ -43,12 +40,10 @@ pug2pdf( {
 
     data: { name: 'foo', address: 'bar'}
 
-    options: {} // support coming soon
-
 } );
 ```
 
-### Licence: (MIT License)
+### The MIT License
 
 **Copyright (c) 2020 Nikhil Gurnani**
 
