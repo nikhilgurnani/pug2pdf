@@ -1,10 +1,12 @@
 const test = require( 'ava' );
-const { generateHtml } = require( '../../libs');
+const { generateHtml } = require( '../../lib' );
+const utils = require( '../utils' );
 
-test( 'Libs#generate-html > generates an HTML file stream based on Pug file', async t => {
+test( '#Library > generates an HTML file based on a Pug file', async t => {
 
-    let _result = await generateHtml( `${__dirname}/../utils/test.pug`, { name: 'Test User' } );
+    const _result = await generateHtml( utils.getFixturePath( 'test.pug' ), { name: 'Test User' } );
 
-    t.is( typeof(_result), 'string', 'The result is a String' );
+    t.is( typeof( _result ), 'string', 'the result is a string' );
+    t.is( _result, utils.getFixture( 'test.html' ), 'the pug template is correctly rendered' );
 
 } );
