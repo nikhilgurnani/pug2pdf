@@ -10,10 +10,17 @@
         "dev:watch": "ava ./__tests__/**/*.specs.js --watch --verbose",
         "dev:watch:single": "ava --watch --verbose"
     },
-    "keywords": ["pug2pdf", "pdfshift", "pdf", "pug", "generate pdf"],
+    "keywords": [
+        "pug2pdf",
+        "pdfshift",
+        "pdf",
+        "pug",
+        "generate pdf"
+    ],
     "author": "Nikhil Gurnani (gurnanikhil@gmail.com)",
     "license": "SEE LICENSE IN LICENSE.MD IN THE ROOT FOLDER",
     "dependencies": {
+        "debug": "^4.1.1",
         "pdfshift": "^2.0.1",
         "pug": "^2.0.4"
     },
