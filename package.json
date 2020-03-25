@@ -1,6 +1,6 @@
 {
     "name": "pug2pdf",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A simple wrapper for Pug and PDFShift.",
     "main": "index.js",
     "scripts": {
