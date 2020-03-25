@@ -4,16 +4,23 @@
     "description": "A simple wrapper for Pug and PDFShift.",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "ava ./__tests__/**/*.specs.js",
         "setup:dev": "rm -rf node_modules && rm package-lock.json && npm i",
         "setup:prod": "rm -rf node_modules && rm package-lock.json && npm i --production",
-        "dev:watch": "ava ./__tests__/**/*.specs.js --watch --verbose",
+        "dev:watch": "npm run test -- --watch --verbose",
         "dev:watch:single": "ava --watch --verbose"
     },
-    "keywords": ["pug2pdf", "pdfshift", "pdf", "pug", "generate pdf"],
+    "keywords": [
+        "pug2pdf",
+        "pdfshift",
+        "pdf",
+        "pug",
+        "generate pdf"
+    ],
     "author": "Nikhil Gurnani (gurnanikhil@gmail.com)",
     "license": "SEE LICENSE IN LICENSE.MD IN THE ROOT FOLDER",
     "dependencies": {
+        "debug": "^4.1.1",
         "pdfshift": "^2.0.1",
         "pug": "^2.0.4"
     },
@@ -61,6 +68,7 @@
         }
     },
     "devDependencies": {
-        "ava": "^3.5.1"
+        "ava": "^3.5.1",
+        "nock": "^12.0.3"
     }
 }
